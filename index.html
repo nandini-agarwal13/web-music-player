@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Web Music Player</title>
+</head>
+<body>
+    <header>
+        <div class="menuside">
+              <h1>Playlist</h1>
+              <div class="playlist">
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i> Now Playing</h4>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i> Recently Played</h4>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i> Recommeded</h4>
+              </div>
+              <div class="menusong">
+                <li class="songItem">
+                    <span>01</span>
+                    <img src="songcover/1.jpg" alt="">
+                    <h5>Lavender Haze <br>
+                       <div class="subtitle">Taylor Swift</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+                </li>
+
+                <li class="songItem">
+                    <span>02</span>
+                    <img src="songcover/2.jpg" alt="">
+                    <h5>Delicate <br>
+                       <div class="subtitle">Taylor Swift</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                </li>
+
+                <li class="songItem">
+                    <span>03</span>
+                    <img src="songcover/3.jpg" alt="">
+                    <h5>Admiring You <br>
+                       <div class="subtitle">Karan Aujla, Ikky, Preston Pablo</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+                </li>
+
+                <li class="songItem">
+                    <span>04</span>
+                    <img src="songcover/4.jpg" alt="">
+                    <h5>Daaru Desi<br>
+                       <div class="subtitle">Benny Dayal, Shalmali Kholgade</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
+                </li>
+
+                <li class="songItem">
+                    <span>05</span>
+                    <img src="songcover/5.jpg" alt="">
+                    <h5>Levitating<br>
+                       <div class="subtitle">Dua Lipa</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="5"></i>
+                </li>
+
+                <li class="songItem">
+                    <span>06</span>
+                    <img src="songcover/6.jpg" alt="">
+                    <h5>Titli <br>
+                       <div class="subtitle">Chinmayi Sripada</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
+                </li>
+
+                <li class="songItem">
+                    <span>07</span>
+                    <img src="songcover/7.jpg" alt="">
+                    <h5>Saudebazi (Encore)<br>
+                       <div class="subtitle">Javed Ali</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+                </li>
+
+
+                <li class="songItem">
+                    <span>08</span>
+                    <img src="songcover/8.jpg" alt="">
+                    <h5>Tu Hi Haqeeqat<br>
+                       <div class="subtitle">Javed Ali</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
+                </li>
+
+
+                <li class="songItem">
+                    <span>09</span>
+                    <img src="songcover/9.jpg" alt="">
+                    <h5>Zara Sa <br>
+                       <div class="subtitle">KK</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="9"></i>
+                </li>
+
+
+                <li class="songItem">
+                    <span>10</span>
+                    <img src="songcover/10.jpg" alt="">
+                    <h5>Kesariya<br>
+                       <div class="subtitle">Arijit Singh</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="10"></i>
+                </li>
+
+
+                <li class="songItem">
+                    <span>11</span>
+                    <img src="songcover/11.jpg" alt="">
+                    <h5>Tera Chehra <br>
+                       <div class="subtitle">Arijit Singh</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="11"></i>
+                </li>
+
+
+                <li class="songItem">
+                    <span>12</span>
+                    <img src="songcover/8.jpg" alt="">
+                    <h5>Dil Ibadat<br>
+                       <div class="subtitle">KK</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="12"></i>
+                </li>
+
+
+                <li class="songItem">
+                    <span>13</span>
+                    <img src="songcover/9.jpg" alt="">
+                    <h5>Haan Tu Hain <br>
+                       <div class="subtitle">KK</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="13"></i>
+                </li>
+            
+              </div>
+        </div>
+        <div class="songside">
+              <nav>
+                <ul>
+                    <li>Discover <span></span></li>
+                    <li>MY LIBRARY</li>
+                    <li>RADIO</li>
+                </ul>
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="search music...">
+                </div>
+                <div class="user">
+                    <img src="songcover/n.png" alt="" >
+                </div>
+
+              </nav>
+              <div class="content">
+                <h1>Taylor Swift- Enchanted</h1>
+                <p>And it was enchanting to meet you
+                   <br>All I can say is, I was enchanted to meet you </br>
+                </p>
+                <div class="buttons">
+                    <button>PLAY</button>
+                    <button>FOLLOW</button>
+                </div>
+                <div class="popularsong">
+                    <div class="h4">
+                        <h4>POPULAR SONGS</h4>
+                        <div class="btns">
+                            <i class="bi bi-arrow-left-short" id="popsongleft"></i>
+                            <i class="bi bi-arrow-right-short" id="popsongright"></i>
+                        </div>
+                    </div>
+                    <div class="popsong">
+                        <li class="songItem">
+                            <div class="imgplay">
+                                <img src="songcover/9.jpg" alt="">
+                                <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+                            </div>
+                            <h5>Zara Sa <br>
+                               <div class="subtitle">KK</div>
+                            </h5>
+                        </li>
+                        
+                        <li class="songItem">
+                            <div class="imgplay">
+                                <img src="songcover/3.jpg" alt="">
+                                <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                            </div>
+                            <h5>Admiring You<br>
+                               <div class="subtitle">Karan Aujla</div>
+                            </h5>
+                        </li>
+
+                        <li class="songItem">
+                            <div class="imgplay">
+                                <img src="songcover/8.jpg" alt="">
+                                <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+                            </div>
+                            <h5>Tu Hi Haqeeqat <br>
+                               <div class="subtitle">Javed Ali</div>
+                            </h5>
+                        </li>
+
+                        <li class="songItem">
+                            <div class="imgplay">
+                                <img src="songcover/1.jpg" alt="">
+                                <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
+                            </div>
+                            <h5>Lavender Haze <br>
+                               <div class="subtitle">Taylor Swift</div>
+                            </h5>
+                        </li>
+
+                        <li class="songItem">
+                            <div class="imgplay">
+                                <img src="songcover/10.jpg" alt="">
+                                <i class="bi playListPlay bi-play-circle-fill" id="5"></i>
+                            </div>
+                            <h5>Kesariya <br>
+                               <div class="subtitle">Arijit Singh</div>
+                            </h5>
+                        </li>
+
+                        <li class="songItem">
+                            <div class="imgplay">
+                                <img src="songcover/4.jpg" alt="">
+                                <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
+                            </div>
+                            <h5>Daaru Desi <br>
+                               <div class="subtitle">Benny Dayal, Shalmali Kholgade</div>
+                            </h5>
+                        </li>
+
+                        <li class="songItem">
+                            <div class="imgplay">
+                                <img src="songcover/6.jpg" alt="">
+                                <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+                            </div>
+                            <h5>Titli <br>
+                               <div class="subtitle">Chinmayi Sripada</div>
+                            </h5>
+                        </li>
+
+                        <li class="songItem">
+                            <div class="imgplay">
+                                <img src="songcover/7.jpg" alt="">
+                                <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+                            </div>
+                            <h5>Saudebazi (Encore) <br>
+                               <div class="subtitle">Javed Ali</div>
+                            </h5>
+                        </li>
+
+                        <li class="songItem">
+                            <div class="imgplay">
+                                <img src="songcover/5.jpg" alt="">
+                                <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
+                            </div>
+                            <h5>Levitating<br>
+                               <div class="subtitle">Dua Lipa</div>
+                            </h5>
+                        </li>
+                        
+                        <li class="songItem">
+                            <div class="imgplay">
+                                <img src="songcover/8.jpg" alt="">
+                                <i class="bi playListPlay bi-play-circle-fill" id="9"></i>
+                            </div>
+                            <h5>Dil Ibadat<br>
+                               <div class="subtitle">KK</div>
+                            </h5>
+                        </li>
+
+                        <li class="songItem">
+                            <div class="imgplay">
+                                <img src="songcover/11.jpg" alt="">
+                                <i class="bi playListPlay bi-play-circle-fill" id="10"></i>
+                            </div>
+                            <h5>Tera Chehra<br>
+                               <div class="subtitle">Arijit Singh</div>
+                            </h5>
+                        </li>
+
+                        <li class="songItem">
+                            <div class="imgplay">
+                                <img src="songcover/2.jpg" alt="">
+                                <i class="bi playListPlay bi-play-circle-fill" id="11"></i>
+                            </div>
+                            <h5>Delicate<br>
+                               <div class="subtitle">Taylor Swift</div>
+                            </h5>
+                        </li>
+
+                    </div>
+                </div>
+                <div class="popularartists">
+                    <div class="h4">
+                    <h4>POPULAR ARTISTS</h4>
+                    <div class="btns">
+                        <i class="bi bi-arrow-left-short" id="popartleft"></i>
+                        <i class="bi bi-arrow-right-short" id="popartright"></i>
+                    </div>
+                    </div>
+                    <div class="item">
+                        
+                        
+
+                        <li>
+                            <img src="songcover/taylor.jpg" alt="">
+                        </li>
+
+                        <li>
+                            <img src="songcover/shreya.jpg" alt="">
+                        </li>
+
+                        <li>
+                            <img src="songcover/arijit.jpg" alt="">
+                        </li>
+
+                        <li>
+                            <img src="songcover/kk.jpg" alt="">
+                        </li>
+
+                        <li>
+                            <img src="songcover/dua.jpg" alt="">
+                        </li>
+
+                        <li>
+                            <img src="songcover/javedali.jpg" alt="">
+                        </li>
+
+                        <li>
+                            <img src="songcover/aujla.jpg" alt="">
+                        </li>
+
+                        <li>
+                            <img src="songcover/ariana.jpg" alt="">
+                        </li>
+
+                        <li>
+                            <img src="songcover/tate.jpg" alt="">
+                        </li>
+
+                        <li>
+                            <img src="songcover/neeti.jpg" alt="">
+                        </li>
+
+                        
+
+                        
+                        
+                   </div>
+               </div>
+               
+              </div>
+
+        </div>
+
+        <div class="masterplay">
+            <div class="wave" id="wavee">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+
+
+            </div>
+            <img src="songcover/esprs.jpg" alt="" id="postermasterplay">
+            <h5 id="title">
+                Espresso 
+                <div class="subtitle">Sabrina Carpenter</div>
+                
+            </h5>
+            <div class="icon">
+                <i class="bi shuffle bi-music-note-beamed">next</i>
+                <i class="bi bi-skip-start-fill"></i>
+                <i class="bi bi-play-fill" id="songPlay"></i>
+                <i class="bi bi-skip-end-fill"></i>
+                <i class="bi bi-cloud-arrow-down-fill" id="downloadmusic"></i>
+            </div>
+            <span id="currentStart">0:00</span>
+            <div class="bar">
+
+                <input type="range" id="seek" min="0" max="100">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+            </div>
+            <span id="currentEnd">0:30</span>
+            <div class="vol">
+                <i class="bi bi-volume-down-fill" id="volicon"></i>
+                <input type="range" min="0" max="100" id="vol">
+                <div class="volbar"></div>
+                <div class="dot" id="voldot"></div>
+            </div>
+        </div>
+    </header>
+    <script src="app.js"></script>
+</body>
+</html>
